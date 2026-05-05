@@ -116,7 +116,7 @@ nav a:hover {
 
 .team-card {
     background: linear-gradient(145deg, #ffffff, #f1f5f9);
-    padding: 28px;
+    padding: 32px;
     border-radius: 22px;
     border-top: 6px solid #2563eb;
     box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
@@ -132,25 +132,7 @@ nav a:hover {
 .team-card h3 {
     color: #0f172a;
     font-size: 24px;
-}
-
-/* PERFECTLY CENTERED PROFILE IMAGE */
-.team-card img {
-    width: 190px;
-    height: 190px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 22px auto;
-    border: 6px solid #38bdf8;
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.25);
-    background-color: #e2e8f0;
-    transition: 0.3s ease;
-}
-
-.team-card img:hover {
-    transform: scale(1.03);
+    margin-bottom: 12px;
 }
 
 .team-card p {
@@ -318,10 +300,5 @@ footer {
 
     .two-column {
         flex-direction: column;
-    }
-
-    .team-card img {
-        width: 160px;
-        height: 160px;
     }
 }
