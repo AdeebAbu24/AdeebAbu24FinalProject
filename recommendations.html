@@ -3,191 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommendations | Social Media Algorithms</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Recommendations for Social Media Algorithms</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef4fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f, #6aa6d8);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            z-index: 10;
+        }
+
+        nav a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 18px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #2f80c0;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: 35px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            font-size: 34px;
+            color: #1e3a5f;
+            margin-bottom: 18px;
+        }
+
+        .section p {
+            font-size: 18px;
+        }
+
+        .intro-section {
+            border-left: 8px solid #6aa6d8;
+        }
+
+        .recommendation-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: #f8fbff;
+            border: 1px solid #d7e6f5;
+            padding: 28px;
+            border-radius: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-top: 6px solid #2f80c0;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .number {
+            width: 42px;
+            height: 42px;
+            background-color: #1e3a5f;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #1e3a5f;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 17px;
+        }
+
+        .full-card {
+            grid-column: span 2;
+            background-color: #eaf4ff;
+        }
+
+        .goal-section {
+            background: linear-gradient(135deg, #1e3a5f, #2f80c0);
+            color: white;
+            text-align: center;
+        }
+
+        .goal-section h2 {
+            color: white;
+        }
+
+        .goal-section p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 750px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .recommendation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full-card {
+                grid-column: span 1;
+            }
+
+            .section {
+                margin: 25px 15px;
+                padding: 28px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Recommendations for Safer Social Media Algorithms</h1>
-    <p>Improving Transparency, Privacy, Accountability, and User Safety</p>
-</header>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Recommendations</h1>
+            <p>How social media platforms can make algorithms safer, fairer, and easier for users to control.</p>
+        </div>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="technology.html">Technology</a>
-    <a href="benefits-risks.html">Benefits & Risks</a>
-    <a href="ethics.html">Ethics</a>
-    <a href="social-issues.html">Social Issues</a>
-    <a href="recommendations.html">Recommendations</a>
-</nav>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#goal">Main Goal</a>
+    </nav>
 
-<main>
+    <main>
 
-<section class="section">
-    <h2>Why Recommendations Matter</h2>
-
-    <p>
-        Social media algorithms are designed to maximize engagement, but this often
-        comes at the cost of privacy, fairness, mental health, and accurate information.
-        To create healthier digital spaces, platforms must prioritize users over profit
-        by improving transparency, safety, and ethical responsibility.
-    </p>
-</section>
-
-<section class="section">
-    <h2>Core Recommendations</h2>
-
-    <div class="recommendation-grid">
-
-        <div class="recommendation">
-            <h3>Chronological Feed Options</h3>
+        <section id="overview" class="section intro-section">
+            <h2>Why Recommendations Matter</h2>
             <p>
-                Users should be able to switch from algorithm-driven feeds to
-                chronological timelines so they can view content with less manipulation.
+                Social media algorithms can be useful because they help users find content they enjoy.
+                However, they can also create problems when users are stuck with algorithm picks, shown
+                repeated harmful content, or exposed to misinformation. Because of this, platforms should
+                give users more control and make recommendation systems more transparent.
             </p>
-        </div>
+        </section>
 
-        <div class="recommendation">
-            <h3>Algorithm Transparency</h3>
+        <section id="recommendations" class="section">
+            <h2>Ways to Make Algorithms Less Harmful</h2>
+
+            <div class="recommendation-grid">
+
+                <div class="card">
+                    <div class="number">1</div>
+                    <h3>Chronological Feed Option</h3>
+                    <p>
+                        Users should be able to switch to a chronological feed so they can see posts in the
+                        order they were posted, instead of only seeing what the algorithm chooses for them.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="number">2</div>
+                    <h3>Explain Recommendations</h3>
+                    <p>
+                        Platforms should clearly show why a post is recommended. For example, the app could
+                        say, “You are seeing this because you watched similar videos.”
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="number">3</div>
+                    <h3>Let Users Change Their Feed</h3>
+                    <p>
+                        Users should have tools to adjust, reset, or remove certain topics from their feed.
+                        This would help people avoid content that feels repetitive, negative, or distracting.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="number">4</div>
+                    <h3>Limit Repeating Harmful Content</h3>
+                    <p>
+                        Platforms should reduce harmful content loops, especially for younger users. This
+                        includes repeated content about self-harm, eating disorders, violence, or extreme ideas.
+                    </p>
+                </div>
+
+                <div class="card full-card">
+                    <div class="number">5</div>
+                    <h3>Control Misinformation Better</h3>
+                    <p>
+                        Social media companies should do a better job controlling misinformation during major
+                        events such as elections, health emergencies, and breaking news. False information can
+                        spread quickly when algorithms push content that gets strong reactions.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="goal" class="section goal-section">
+            <h2>Main Goal</h2>
             <p>
-                Platforms should clearly explain why posts, advertisements,
-                or videos are recommended to users.
+                The goal is not to remove social media algorithms completely. Instead, platforms should build
+                systems that protect users while still helping them find useful and interesting content.
+                Algorithms should support people, not trap them in harmful or misleading feeds.
             </p>
-        </div>
+        </section>
 
-        <div class="recommendation">
-            <h3>User Control</h3>
-            <p>
-                Users should have the ability to reset, customize,
-                or reduce algorithmic personalization.
-            </p>
-        </div>
+    </main>
 
-        <div class="recommendation">
-            <h3>Privacy Protection</h3>
-            <p>
-                Reduce excessive data collection and provide stronger consent
-                options for personal information use.
-            </p>
-        </div>
-
-        <div class="recommendation">
-            <h3>Protecting Minors</h3>
-            <p>
-                Platforms should limit harmful content loops,
-                addictive recommendations, and targeted advertising for children.
-            </p>
-        </div>
-
-        <div class="recommendation">
-            <h3>Misinformation Reduction</h3>
-            <p>
-                Social media companies should strengthen fact-checking,
-                reduce false content amplification, and improve moderation.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section class="section">
-    <h2>Platform-Specific Recommendations</h2>
-
-    <div class="recommendation-grid">
-
-        <div class="recommendation">
-            <h3>TikTok</h3>
-            <p>
-                TikTok should provide stronger user control over the For You Page,
-                improve recommendation reset tools, and reduce harmful repetitive
-                content loops, especially for younger audiences.
-            </p>
-        </div>
-
-        <div class="recommendation">
-            <h3>Instagram</h3>
-            <p>
-                Instagram should improve transparency for Reels and Explore content,
-                reduce harmful comparison-based recommendations, and strengthen
-                privacy controls for ad personalization.
-            </p>
-        </div>
-
-        <div class="recommendation">
-            <h3>Facebook</h3>
-            <p>
-                Facebook should reduce misinformation during political and social events,
-                increase News Feed transparency, and give users better control over
-                algorithmic ranking.
-            </p>
-        </div>
-
-        <div class="recommendation">
-            <h3>YouTube</h3>
-            <p>
-                YouTube should reduce extreme recommendation chains,
-                improve recommendation explanations, and offer easier
-                history reset and personalization controls.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section class="section">
-    <h2>Stakeholder Responsibilities</h2>
-
-    <div class="two-column">
-
-        <div class="card">
-            <h3>Technology Companies</h3>
-            <ul>
-                <li>Design ethically responsible systems</li>
-                <li>Increase transparency</li>
-                <li>Protect user privacy</li>
-                <li>Limit harmful content</li>
-                <li>Support digital well-being</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Governments and Policymakers</h3>
-            <ul>
-                <li>Create digital safety regulations</li>
-                <li>Protect privacy rights</li>
-                <li>Support independent oversight</li>
-                <li>Promote accountability</li>
-                <li>Encourage ethical innovation</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-<section class="section">
-    <h2>Future Goals</h2>
-
-    <p>
-        The future of social media should focus on ethical innovation,
-        balanced personalization, and user well-being. Algorithms should
-        help users discover meaningful content without encouraging addiction,
-        division, or misinformation.
-    </p>
-
-    <p>
-        A safer digital future depends on responsible developers,
-        informed users, stronger platform accountability,
-        and better public policy.
-    </p>
-</section>
-
-</main>
-
-<footer>
-    <p>Final Project | Recommendations for Ethical Social Media Algorithms | IT in the Global Economy</p>
-</footer>
+    <footer>
+        <p>Social Media Algorithms Final Project | Recommendations</p>
+    </footer>
 
 </body>
 </html>
